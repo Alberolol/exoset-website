@@ -10,7 +10,6 @@ interface ScrollExpandingCardProps {
 export default function ScrollExpandingCard({ children, className = "" }: ScrollExpandingCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isReady, setIsReady] = useState(false);
   
   // Calculate initial scroll position to prevent jump
   const calculateScrollProgress = () => {
@@ -35,7 +34,6 @@ export default function ScrollExpandingCard({ children, className = "" }: Scroll
     if (cardRef.current) {
       const initialProgress = calculateScrollProgress();
       setScrollProgress(initialProgress);
-      setIsReady(true);
     }
   }, []);
 

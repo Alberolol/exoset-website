@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import MountainLandscape from '@/components/MountainLandscape';
 import ScrollExpandingCard from '@/components/ScrollExpandingCard';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [currentQuote, setCurrentQuote] = useState(0);
@@ -63,7 +64,7 @@ export default function Home() {
               Vos <span className="text-white">TI</span> entre de bonnes mains
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              Avec plus de 40 ans d'expérience dans le domaine des technologies de l'information, 
+              Avec plus de 40 ans d&apos;expérience dans le domaine des technologies de l&apos;information, 
               Exoset se distingue par son savoir-faire et son agilité pour sa clientèle diversifiée.
             </p>
             <div className="flex justify-center">
@@ -107,7 +108,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Solutions d'hébergement adaptées
+                Solutions d&apos;hébergement adaptées
               </h3>
               <p className="text-gray-600">
                 Avec des infrastructures serveurs et de stockage de pointe avec nos partenaires Dell, 
@@ -127,7 +128,7 @@ export default function Home() {
               </h3>
               <p className="text-gray-600">
                 Accompagné par les plus grands acteurs de la scène technologique mondiale, 
-                Exoset est pleinement capable d'acquérir l'équipement technologique requis.
+                Exoset est pleinement capable d&apos;acquérir l&apos;équipement technologique requis.
               </p>
             </div>
 
@@ -142,8 +143,8 @@ export default function Home() {
                 Support professionnel et service
               </h3>
               <p className="text-gray-600">
-                En tant que partenaire officiel, le personnel d'Exoset est capable d'accéder 
-                au support jusqu'au fabricant afin de vous accompagner dans vos défis.
+                En tant que partenaire officiel, le personnel d&apos;Exoset est capable d&apos;accéder 
+                au support jusqu&apos;au fabricant afin de vous accompagner dans vos défis.
               </p>
             </div>
           </div>
@@ -245,7 +246,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Domaines d'Expertise
+              Nos Domaines d&apos;Expertise
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pour tous vos besoins informatiques, nous livrons dans les délais et le budget
@@ -369,7 +370,7 @@ export default function Home() {
                 ].map((quote, index) => (
                   <div key={index} className="w-full flex-shrink-0 text-center px-4">
                     <blockquote className="text-2xl md:text-3xl font-light text-gray-800 leading-relaxed mb-8 pt-8">
-                      "{quote.text}"
+                      &quot;{quote.text}&quot;
                     </blockquote>
                     
                     <div className="flex flex-col items-center">
@@ -405,10 +406,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Actualités & Expertise
+              Actualités &amp; Expertise
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez nos derniers articles sur les tendances technologiques et nos conseils d'experts
+              Découvrez nos derniers articles sur les tendances technologiques et nos conseils d&apos;experts
             </p>
           </div>
 
@@ -442,10 +443,12 @@ export default function Home() {
               <article key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
                 {/* Article Image */}
                 <div className="h-48 relative overflow-hidden">
-                  <img 
+                  <Image 
                     src={article.image} 
                     alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:scale-105 transition-transform duration-300"
                   />
                   {/* Category badge */}
                   <div className="absolute top-4 left-4">
@@ -501,7 +504,7 @@ export default function Home() {
             Prêt à transformer votre infrastructure IT ?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons 
+            Contactez-nous dès aujourd&apos;hui pour découvrir comment nous pouvons 
             vous accompagner dans vos projets technologiques.
           </p>
           <button className="bg-white text-exoset-blue px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg hover:shadow-xl">
@@ -517,33 +520,33 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-start items-center gap-8 md:gap-12 opacity-70 hover:opacity-100 transition-opacity duration-300">
               {/* Partner 1 */}
-              <div className="flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="/images/partners/partner1.png" alt="Partner 1" className="max-h-full max-w-full object-contain" />
+              <div className="relative flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
+                <Image src="/images/partners/partner1.png" alt="Partner 1" layout="fill" objectFit="contain" />
               </div>
               
               {/* Partner 2 */}  
-              <div className="flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="/images/partners/partner2.png" alt="Partner 2" className="max-h-full max-w-full object-contain" />
+              <div className="relative flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
+                <Image src="/images/partners/partner2.png" alt="Partner 2" layout="fill" objectFit="contain" />
               </div>
               
               {/* Partner 3 */}
-              <div className="flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="/images/partners/partner3.png" alt="Partner 3" className="max-h-full max-w-full object-contain" />
+              <div className="relative flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
+                <Image src="/images/partners/partner3.png" alt="Partner 3" layout="fill" objectFit="contain" />
               </div>
               
               {/* Partner 4 */}
-              <div className="flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="/images/partners/partner4.png" alt="Partner 4" className="max-h-full max-w-full object-contain" />
+              <div className="relative flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
+                <Image src="/images/partners/partner4.png" alt="Partner 4" layout="fill" objectFit="contain" />
               </div>
               
               {/* Partner 5 */}
-              <div className="flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="/images/partners/partner5.png" alt="Partner 5" className="max-h-full max-w-full object-contain" />
+              <div className="relative flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
+                <Image src="/images/partners/partner5.png" alt="Partner 5" layout="fill" objectFit="contain" />
               </div>
               
               {/* Partner 6 */}
-              <div className="flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="/images/partners/partner6.png" alt="Partner 6" className="max-h-full max-w-full object-contain" />
+              <div className="relative flex items-center justify-center h-16 w-40 filter grayscale hover:grayscale-0 transition-all duration-300">
+                <Image src="/images/partners/partner6.png" alt="Partner 6" layout="fill" objectFit="contain" />
               </div>
             </div>
           </div>
@@ -554,7 +557,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">EXOSET</h3>
               <p className="text-gray-400">
-                Plus de 40 ans d'expérience dans les technologies de l'information.
+                Plus de 40 ans d&apos;expérience dans les technologies de l&apos;information.
               </p>
             </div>
             <div>

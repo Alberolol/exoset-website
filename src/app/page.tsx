@@ -90,7 +90,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Services
+              Nos services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pour accompagner nos clients dans une approche à 360 degrés, Exoset diversifie 
@@ -245,7 +245,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos Domaines d&apos;Expertise
+              Nos domaines d'expertise
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pour tous vos besoins informatiques, nous livrons dans les délais et le budget
@@ -273,7 +273,7 @@ export default function Home() {
                 )
               },
               { 
-                title: 'Communications Unifiées', 
+                title: 'Communications unifiées', 
                 desc: 'Téléphone et PBX, Teams, Cisco Webex',
                 icon: (
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -405,17 +405,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Actualités &amp; Expertise
+              Actualités et expertise
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez nos derniers articles sur les tendances technologiques et nos conseils d&apos;experts
+              Découvrez nos derniers articles sur les tendances technologiques et nos conseils d'experts
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Migration vers le Cloud Azure : Guide Complet 2025",
+                title: "Migration vers le cloud Azure : guide complet 2025",
                 excerpt: "Découvrez les meilleures pratiques pour migrer votre infrastructure vers Azure en toute sécurité. Nos experts partagent leur expérience de plus de 100 migrations réussies.",
                 date: "15 mars 2025",
                 readTime: "5 min",
@@ -423,7 +423,7 @@ export default function Home() {
                 image: "/images/migration.png"
               },
               {
-                title: "Cybersécurité : 7 Menaces Émergentes à Connaître",
+                title: "Cybersécurité : 7 menaces émergentes à connaître",
                 excerpt: "L'évolution constante des cybermenaces nécessite une vigilance accrue. Analysons les nouvelles techniques d'attaque et les stratégies de protection adaptées.",
                 date: "8 mars 2025", 
                 readTime: "7 min",
@@ -431,7 +431,7 @@ export default function Home() {
                 image: "/images/cybersécurité.png"
               },
               {
-                title: "Virtualisation VMware : Optimiser les Performances",
+                title: "Virtualisation VMware : optimiser les performances",
                 excerpt: "Maximisez l'efficacité de votre infrastructure virtualisée avec nos techniques d'optimisation éprouvées. Réduisez les coûts tout en améliorant les performances.",
                 date: "2 mars 2025",
                 readTime: "6 min", 

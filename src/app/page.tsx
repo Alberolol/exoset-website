@@ -30,7 +30,6 @@ export default function Home() {
         const windowHeight = window.innerHeight;
         
         // Calculate parallax movement with bounds checking
-        const speed = 0.3; // Parallax speed (0.3 = slower movement)
         const maxMovement = elementHeight * 0.2; // Maximum 20% of container height movement
         
         // Calculate scroll progress through the element (0 to 1)

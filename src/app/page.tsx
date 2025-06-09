@@ -245,7 +245,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos domaines d'expertise
+              Nos domaines d&apos;expertise
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pour tous vos besoins informatiques, nous livrons dans les délais et le budget
@@ -408,7 +408,7 @@ export default function Home() {
               Actualités et expertise
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez nos derniers articles sur les tendances technologiques et nos conseils d'experts
+              Découvrez nos derniers articles sur les tendances technologiques et nos conseils d&apos;experts
             </p>
           </div>
 
